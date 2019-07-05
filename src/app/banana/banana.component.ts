@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Store, select } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { AppState, getMyBanana } from './app.state';
+
+
 @Component({
     selector: 'app-banana',
     templateUrl: './banana.component.html',
@@ -7,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BananaComponent implements OnInit {
 
-    title = 'My NgRx Banana App';
+    title = 'NgRx Banana App';
 
     constructor() {
 
